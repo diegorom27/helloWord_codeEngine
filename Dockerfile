@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 RUN ls -la /app
 
 # Copia el contenido de la aplicación en el directorio de trabajo
-COPY src/ .
+COPY myproyect/src .
 
 # Lista los archivos en el directorio de trabajo nuevamente (para depuración)
 RUN ls -la /app
