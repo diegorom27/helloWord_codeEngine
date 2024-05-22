@@ -10,8 +10,14 @@ COPY requirements.txt requirements.txt
 # Instala las dependencias
 RUN pip install -r requirements.txt
 
+# Lista los archivos en el directorio de trabajo (para depuración)
+RUN ls -la /app
+
 # Copia el contenido de la aplicación en el directorio de trabajo
 COPY src/ .
+
+# Lista los archivos en el directorio de trabajo nuevamente (para depuración)
+RUN ls -la /app
 
 # Expone el puerto en el que la aplicación va a correr
 EXPOSE 8080
