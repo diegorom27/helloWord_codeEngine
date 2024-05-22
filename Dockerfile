@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copia el archivo de requisitos en el directorio de trabajo
-COPY requirements.txt requirements.txt
+COPY myproyect/requirements.txt requirements.txt
 
 # Instala las dependencias
 RUN pip install -r requirements.txt
